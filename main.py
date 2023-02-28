@@ -1,12 +1,12 @@
+
 from time import time
-import random as rn
 from merge import mergeSort
+from check import fileEmpty, write ,get
 from linked_list import Linked
 from linkedList_mergesort import linkedList_MergeSort
 
 
-limit = 1000000
-lst = [str(rn.randint(0,limit)) for count in range(limit)]
+st = get() if not fileEmpty() else write().get()
 def list_timerange():
 	#using the merge with python list
 	#Checking how long it takes to Merge sort python list
@@ -33,7 +33,7 @@ print("Sorting 1M Data with LinkedList_Mersort...")
 old = time()
 sorted_linked = linkedList_MergeSort(l)
 print(f"LinkedList Sorted 1M Data for {round((time()-old),3)} seconds\n")
-sorted_linked.find(rn.choice(lst))
+sorted_linked.find("100")
 
 
 
