@@ -11,9 +11,9 @@ def write():
 		for i in range(limit+1):
 			f.write(str(rn.randint(0,limit))+',')
 		f.write("}]")
-	def get():
-		with open(filename,'r') as f:
-			return f.read()[10:-3].split(',')
+	
+		
+			
 			
 			
 
