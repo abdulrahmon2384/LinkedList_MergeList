@@ -6,7 +6,14 @@ from linked_list import Linked
 from linkedList_mergesort import linkedList_MergeSort
 
 
-st = get() if not fileEmpty() else write().get()
+if fileEmpty():
+
+	write() ;lst = get()
+
+else:
+
+	lst = get()
+	
 def list_timerange():
 	#using the merge with python list
 	#Checking how long it takes to Merge sort python list
